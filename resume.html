@@ -1,1 +1,172 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Lenka Z</title>
 
+    <style>
+        /* ------------ GLOBAL ------------ */
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: "Georgia", serif;
+            background-color: #F5EDE3;  /* beige */
+            color: #3E2C2A;             /* brown */
+            line-height: 1.7;
+        }
+
+        a {
+            color: #5C4637;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ------------ HEADER ------------ */
+        .site-header {
+            background-color: #E8D8C3;
+            padding: 18px 5%;
+            border-bottom: 1px solid #D6C5B2;
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            letter-spacing: 0.15em;
+            color: #4A352E;
+            margin: 0;
+        }
+
+        .main-nav a {
+            margin-left: 22px;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding-bottom: 3px;
+        }
+
+        .main-nav a.active {
+            border-bottom: 2px solid #A67C52;
+        }
+
+        /* ------------ MAIN ------------ */
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 5% 60px;
+        }
+
+        .section-title {
+            font-size: 1.7rem;
+            color: #4A352E;
+            border-bottom: 3px solid #A67C52;
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        .section-intro {
+            margin-top: 10px;
+            margin-bottom: 25px;
+            color: #5C4637;
+        }
+
+        .pdf-wrapper {
+            margin-top: 15px;
+            border-radius: 10px;
+            border: 1px solid #D6C5B2;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(92, 70, 55, 0.2);
+        }
+
+        .resume-download {
+            margin-top: 15px;
+            font-size: 0.95rem;
+        }
+
+        /* ------------ FOOTER ------------ */
+        .site-footer {
+            text-align: center;
+            padding: 22px 5%;
+            background-color: #E8D8C3;
+            color: #4A352E;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        /* ------------ RESPONSIVE ------------ */
+        @media (max-width: 900px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .main-nav a {
+                margin-left: 0;
+                margin-right: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <h1 class="logo">LENKA Z</h1>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="reel.html">Reel</a>
+            <a href="resume.html" class="active">Resume</a>
+            <a href="bio.html">Bio</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section>
+        <h2 class="section-title">Resume</h2>
+        <p class="section-intro">
+            View or download my full professional resume as a PDF.
+        </p>
+
+        <!-- Embedded PDF viewer -->
+        <div class="pdf-wrapper">
+            <embed src="resume.pdf"
+                   type="application/pdf"
+                   width="100%"
+                   height="800px" />
+        </div>
+
+        <!-- Download link -->
+        <p class="resume-download">
+            <a href="resume.pdf" target="_blank" rel="noopener">
+                Open or download resume in a new tab
+            </a>
+        </p>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>© <span id="year"></span> Lenka Zviadadze. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
