@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,11 +98,12 @@
             margin-top: 15px;
         }
 
-        .video-wrapper video {
+        .video-wrapper iframe {
             width: 100%;
+            aspect-ratio: 16 / 9;
             border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(92, 70, 55, 0.2);
-            display: block;
+            border: 1px solid #D6C5B2;
+            box-shadow: 0 4px 18px rgba(92, 70, 55, 0.15);
         }
 
         /* Footer */
@@ -148,19 +148,21 @@
 <main>
     <h2 class="section-title">Clips</h2>
 
-    <!-- FIRST CLIP (your uploaded clip.MOV) -->
+    <!-- FIRST CLIP (Your YouTube link) -->
     <div class="clip-card">
         <h3 class="clip-title">Scene Clip</h3>
         <div class="video-wrapper">
-            <video autoplay loop muted playsinline>
-                <source src="clip.MOV" type="video/mp4">
-                <source src="clip.MOV" type="video/quicktime">
-                Your browser does not support the video tag.
-            </video>
+            <iframe
+                src="https://www.youtube.com/embed/qNuHvs-n0t4"
+                title="Scene Clip by Lenka Z"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
         </div>
     </div>
 
-    <!-- The page can grow: we can add Clip 2, Clip 3, Vimeo links, etc. -->
+    <!-- Ready for more clips later -->
 </main>
 
 <footer class="site-footer">
