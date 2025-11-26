@@ -126,6 +126,25 @@ main {
     border: 1px solid #D6C5B2;
 }
 
+/* Resume button under reel */
+.resume-link {
+    margin-top: 22px;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #A67C52;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+}
+.resume-btn:hover {
+    background-color: #8C673F;
+}
+
 /* ---------------- FOOTER ---------------- */
 .site-footer {
     text-align: center;
@@ -166,8 +185,8 @@ main {
         <h1 class="logo">LENKA Z</h1>
         <nav class="main-nav">
             <a href="index.html" class="active">Home</a>
+            <a href="reel.html">Reel</a>
             <a href="resume.html">Resume</a>
-            <a href="clips.html">Clips</a>
             <a href="bio.html">Bio</a>
         </nav>
     </div>
@@ -201,12 +220,19 @@ main {
 
         <div class="video-wrapper">
             <iframe
-                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                src="https://www.youtube.com/embed/NRL71pktEM4"
                 title="Lenka Z Reel"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
             </iframe>
+        </div>
+
+        <!-- Button linking to the Resume page -->
+        <div class="resume-link">
+            <a class="resume-btn" href="resume.html">
+                View / Download Resume (PDF)
+            </a>
         </div>
     </section>
 
