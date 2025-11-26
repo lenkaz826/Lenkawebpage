@@ -12,8 +12,8 @@
 body {
     margin: 0;
     font-family: "Georgia", serif;
-    background-color: #F5EDE3;  /* beige */
-    color: #3E2C2A;             /* brown */
+    background-color: #F5EDE3;
+    color: #3E2C2A;
     line-height: 1.7;
 }
 
@@ -64,7 +64,7 @@ main {
     padding: 40px 5% 60px;
 }
 
-/* ---------------- HERO SECTION ---------------- */
+/* ---------------- HERO ---------------- */
 .hero {
     display: flex;
     gap: 40px;
@@ -81,7 +81,6 @@ main {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 16px rgba(92, 70, 55, 0.2);
-    display: block;
 }
 
 .hero-text {
@@ -96,7 +95,6 @@ main {
 .hero-name {
     color: #4A352E;
     font-size: 1.8rem;
-    margin-top: 0;
 }
 
 .tagline {
@@ -126,25 +124,6 @@ main {
     border: 1px solid #D6C5B2;
 }
 
-/* Resume button under reel */
-.resume-link {
-    margin-top: 22px;
-}
-
-.resume-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #A67C52;
-    color: #fff;
-    text-transform: uppercase;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    letter-spacing: 0.08em;
-}
-.resume-btn:hover {
-    background-color: #8C673F;
-}
-
 /* ---------------- FOOTER ---------------- */
 .site-footer {
     text-align: center;
@@ -157,23 +136,10 @@ main {
 
 /* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 900px) {
-    .hero { 
-        flex-direction: column;
-        text-align: center;
-    }
-    .hero-images {
-        max-width: 60%;
-        margin: 0 auto;
-    }
-    .header-inner {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-    .main-nav a {
-        margin-left: 0;
-        margin-right: 16px;
-    }
+    .hero { flex-direction: column; text-align: center; }
+    .hero-images { max-width: 60%; margin: 0 auto; }
+    .header-inner { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .main-nav a { margin-left: 0; margin-right: 16px; }
 }
 </style>
 
@@ -185,8 +151,8 @@ main {
         <h1 class="logo">LENKA Z</h1>
         <nav class="main-nav">
             <a href="index.html" class="active">Home</a>
-            <a href="reel.html">Reel</a>
             <a href="resume.html">Resume</a>
+            <a href="clips.html">Clips</a>
             <a href="bio.html">Bio</a>
         </nav>
     </div>
@@ -194,27 +160,27 @@ main {
 
 <main>
 
-    <!-- ---------------- HERO SECTION ---------------- -->
+    <!-- ---------------- HERO ---------------- -->
     <section class="hero">
 
         <div class="hero-images">
-            <img src="headshot2.JPG" alt="Headshot of Lenka Z" class="headshot">
+            <img src="headshot2.JPG" class="headshot" alt="Headshot of Lenka Z">
         </div>
 
         <div class="hero-text">
             <h2 class="hero-name">Lenka Zviadadze (Lenka Z)</h2>
             <p class="tagline">
                 Lenka Zviadadze (Lenka Z) is an award-winning singer and actor from Tbilisi, Georgia.
-                She has won multiple international music competitions and has gained national recognition
-                through Georgia’s leading reality TV franchises, including Got Talent and The Voice of Georgia,
-                where she earned a four-chair turn. Now based in New York City, she continues to build her
-                artistic career across music, theatre, and performance.
+                She has won multiple international music competitions and has gained national
+                recognition through Georgia’s leading reality TV franchises, including Got Talent and
+                The Voice of Georgia, where she earned a four-chair turn. Now based in New York City,
+                she continues to build her artistic career across music, theatre, and performance.
             </p>
         </div>
 
     </section>
 
-    <!-- ---------------- VIDEO SECTION ---------------- -->
+    <!-- ---------------- REEL ---------------- -->
     <section>
         <h2 class="section-title">Video Reel</h2>
 
@@ -227,19 +193,12 @@ main {
                 allowfullscreen>
             </iframe>
         </div>
-
-        <!-- Button linking to the Resume page -->
-        <div class="resume-link">
-            <a class="resume-btn" href="resume.html">
-                View / Download Resume (PDF)
-            </a>
-        </div>
     </section>
 
 </main>
 
 <footer class="site-footer">
-    <p>© <span id="year"></span> Lenka Zviadadze. All rights reserved.</p>
+    © <span id="year"></span> Lenka Zviadadze. All rights reserved.
 </footer>
 
 <script>
