@@ -5,87 +5,225 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Lenka Z</title>
 
-<style>
-body {
-    margin: 0;
-    font-family: "Georgia", serif;
-    background-color: #F5EDE3;
-    color: #3E2C2A;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: "Georgia", serif;
+            background-color: #F5EDE3;
+            color: #3E2C2A;
+            line-height: 1.6;
+        }
 
-.site-header {
-    background-color: #E8D8C3;
-    padding: 18px 5%;
-    border-bottom: 1px solid #D6C5B2;
-    position: sticky;
-    top: 0;
-}
+        /* Header / Nav */
+        .site-header {
+            background-color: #E8D8C3;
+            padding: 18px 5%;
+            border-bottom: 1px solid #D6C5B2;
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
 
-.header-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.logo {
-    font-size: 1.8rem;
-    letter-spacing: 0.15em;
-}
+        .logo {
+            font-size: 1.8rem;
+            letter-spacing: 0.15em;
+            margin: 0;
+            color: #4A352E;
+        }
 
-.main-nav a {
-    margin-left: 22px;
-    text-transform: uppercase;
-    padding-bottom: 3px;
-}
+        .main-nav a {
+            margin-left: 22px;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            letter-spacing: 0.1em;
+            padding-bottom: 3px;
+            text-decoration: none;
+            color: #5C4637;
+        }
 
-.main-nav a.active {
-    border-bottom: 2px solid #A67C52;
-}
+        .main-nav a:hover {
+            text-decoration: underline;
+        }
 
-main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 5% 80px;
-    text-align: center;
-}
+        .main-nav a.active {
+            border-bottom: 2px solid #A67C52;
+        }
 
-.section-title {
-    font-size: 1.7rem;
-    border-bottom: 3px solid #A67C52;
-    display: inline-block;
-    padding-bottom: 4px;
-}
+        /* Main layout */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 5% 80px;
+        }
 
-.resume-frame {
-    margin-top: 35px;
-    width: 100%;
-    height: 1200px;
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(92, 70, 55, 0.15);
-    overflow: hidden;
-}
+        .section-title {
+            font-size: 1.7rem;
+            color: #4A352E;
+            border-bottom: 3px solid #A67C52;
+            display: inline-block;
+            padding-bottom: 4px;
+            margin-bottom: 25px;
+        }
 
-.download-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 18px;
-    background-color: #A67C52;
-    color: white;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-}
+        .resume-card {
+            background-color: #FAF4EC;
+            border-radius: 12px;
+            border: 1px solid #E0D5C6;
+            box-shadow: 0 4px 18px rgba(92, 70, 55, 0.15);
+            padding: 28px 26px 30px;
+        }
 
-.site-footer {
-    text-align: center;
-    padding: 22px 5%;
-    background-color: #E8D8C3;
-    margin-top: 50px;
-}
-</style>
+        .resume-header {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            margin-bottom: 24px;
+        }
+
+        .name-block h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #B13270; /* similar to pink in PDF */
+        }
+
+        .rep-block {
+            text-align: right;
+            font-size: 0.9rem;
+            color: #5C4637;
+        }
+
+        .rep-block strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .resume-body {
+            display: grid;
+            grid-template-columns: 2.5fr 1fr;
+            gap: 32px;
+        }
+
+        .left-column section {
+            margin-bottom: 20px;
+        }
+
+        .left-column h2,
+        .right-column h2 {
+            font-size: 1.05rem;
+            margin: 0 0 8px;
+            color: #3E2C2A;
+        }
+
+        .left-column h2 {
+            font-weight: bold;
+        }
+
+        .credit-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        .credit-table td {
+            padding: 2px 0;
+            vertical-align: top;
+        }
+
+        .credit-table td:nth-child(1) {
+            width: 55%;
+        }
+
+        .credit-table td:nth-child(2) {
+            width: 25%;
+            text-align: left;
+        }
+
+        .credit-table td:nth-child(3) {
+            width: 20%;
+            text-align: right;
+        }
+
+        .training-text,
+        .note-text {
+            font-size: 0.95rem;
+        }
+
+        .training-text p {
+            margin: 2px 0;
+        }
+
+        .note-text {
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .right-column {
+            font-size: 0.95rem;
+        }
+
+        .skills-box {
+            border: 1px dashed #C78AA5;
+            border-radius: 8px;
+            padding: 10px 12px;
+            margin-top: 6px;
+        }
+
+        /* Download button */
+        .download-wrapper {
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 10px 18px;
+            background-color: #A67C52;
+            color: #fff;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            text-decoration: none;
+        }
+
+        .download-btn:hover {
+            background-color: #8C673F;
+        }
+
+        /* Footer */
+        .site-footer {
+            text-align: center;
+            padding: 22px 5%;
+            background-color: #E8D8C3;
+            color: #4A352E;
+            font-size: 0.9rem;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 800px) {
+            .resume-body {
+                grid-template-columns: 1fr;
+            }
+
+            .resume-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .rep-block {
+                text-align: left;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -95,8 +233,8 @@ main {
         <h1 class="logo">LENKA Z</h1>
         <nav class="main-nav">
             <a href="index.html">Home</a>
+            <a href="reel.html">Reel</a>
             <a href="resume.html" class="active">Resume</a>
-            <a href="clips.html">Clips</a>
             <a href="bio.html">Bio</a>
         </nav>
     </div>
@@ -105,11 +243,132 @@ main {
 <main>
     <h2 class="section-title">Resume</h2>
 
-    <!-- Full PDF resume embedded cleanly -->
-    <iframe class="resume-frame" src="resume.pdf"></iframe>
+    <div class="resume-card">
 
-    <!-- Download button -->
-    <a class="download-btn" href="resume.pdf" target="_blank">Download Resume (PDF)</a>
+        <!-- Header: Name + Representation -->
+        <div class="resume-header">
+            <div class="name-block">
+                <h1>Lenka Z</h1>
+            </div>
+            <div class="rep-block">
+                <strong>UIA Talent Agency</strong>
+                theatrical@uiatalent.com<br>
+                (212) 965-1797
+            </div>
+        </div>
+
+        <!-- Body: left = credits/training, right = skills -->
+        <div class="resume-body">
+            <div class="left-column">
+
+                <!-- Television -->
+                <section>
+                    <h2>Television</h2>
+                    <table class="credit-table">
+                        <tr>
+                            <td>The Voice Georgia</td>
+                            <td></td>
+                            <td>Reality/Competition</td>
+                        </tr>
+                        <tr>
+                            <td>Georgia’s Got Talent</td>
+                            <td></td>
+                            <td>Reality/Competition</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!-- Film -->
+                <section>
+                    <h2>Film</h2>
+                    <table class="credit-table">
+                        <tr>
+                            <td>Ditto</td>
+                            <td>Lead</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Too Emotional</td>
+                            <td>Lead</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!-- Theatre -->
+                <section>
+                    <h2>Theatre</h2>
+                    <table class="credit-table">
+                        <tr>
+                            <td>Roam 29 Hour Reading</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bran Castle Workshop</td>
+                            <td>Mirela</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Feminine Rage: Musicals edition</td>
+                            <td></td>
+                            <td>54 Below</td>
+                        </tr>
+                        <tr>
+                            <td>The Trojan Women</td>
+                            <td>Helen</td>
+                            <td>Adelphi University</td>
+                        </tr>
+                        <tr>
+                            <td>A Cinderella Story</td>
+                            <td>Cinderella</td>
+                            <td>N. Dumbadze Theater</td>
+                        </tr>
+                        <tr>
+                            <td>A Melodies of Vera District</td>
+                            <td>Tamro</td>
+                            <td>International Tour</td>
+                        </tr>
+                        <tr>
+                            <td>A Christmas Tale</td>
+                            <td>Snowflake</td>
+                            <td>N. Dumbadze Theater</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!-- Training -->
+                <section>
+                    <h2>Training</h2>
+                    <div class="training-text">
+                        <p>Adelphi University, BFA in Acting</p>
+                        <p>Acting/Voice/Dance Teachers &amp; Coaches: Shoshanah Tarkow. Kerry Prep. Ray Rodriguez &amp; Amanda Fiorentine</p>
+                    </div>
+                    <div class="note-text">
+                        *Local Hire: NY
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Right Column: Special Skills -->
+            <div class="right-column">
+                <h2>Special Skills</h2>
+                <div class="skills-box">
+                    Fluent Georgian
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Keep original PDF available for download -->
+    <div class="download-wrapper">
+        <a class="download-btn" href="resume.pdf" target="_blank">
+            Download Resume (PDF)
+        </a>
+    </div>
+
 </main>
 
 <footer class="site-footer">
@@ -117,7 +376,7 @@ main {
 </footer>
 
 <script>
-document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
 </body>
