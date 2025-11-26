@@ -69,6 +69,7 @@ main {
     display: flex;
     gap: 40px;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .hero-images {
@@ -120,7 +121,7 @@ main {
 
 .video-wrapper iframe {
     width: 100%;
-    height: 420px;
+    aspect-ratio: 16 / 9;
     border-radius: 10px;
     border: 1px solid #D6C5B2;
 }
@@ -144,6 +145,15 @@ main {
     .hero-images {
         max-width: 60%;
         margin: 0 auto;
+    }
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .main-nav a {
+        margin-left: 0;
+        margin-right: 16px;
     }
 }
 </style>
@@ -191,7 +201,7 @@ main {
 
         <div class="video-wrapper">
             <iframe
-                src="https://www.youtube.com/embed/YNdT5JIlUZM"
+                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
                 title="Lenka Z Reel"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
