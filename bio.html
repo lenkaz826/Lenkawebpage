@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography | Lenka Z</title>
 
+<style>
+/* ------------ GLOBAL ------------ */
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background-color: #F5EDE3;  /* beige */
+    color: #3E2C2A;             /* brown */
+    line-height: 1.7;
+}
+
+/* ------------ HEADER ------------ */
+.site-header {
+    background-color: #E8D8C3;
+    padding: 18px 5%;
+    border-bottom: 1px solid #D6C5B2;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 0.15em;
+    color: #4A352E;
+    margin: 0;
+}
+
+.main-nav a {
+    margin-left: 22px;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding-bottom: 3px;
+}
+
+.main-nav a.active {
+    border-bottom: 2px solid #A67C52;
+}
+
+/* ------------ MAIN ------------ */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 5% 80px;
+}
+
+.section-title {
+    font-size: 1.7rem;
+    color: #4A352E;
+    border-bottom: 3px solid #A67C52;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.bio-text {
+    margin-top: 20px;
+    color: #5C4637;
+    font-size: 1rem;
+    white-space: pre-line;
+}
+
+/* ------------ VIDEO LOOP ------------ */
+.video-wrapper {
+    margin-top: 40px;
+    max-width: 700px;
+}
+
+video {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(92, 70, 55, 0.2);
+}
+
+/* ------------ FOOTER ------------ */
+.site-footer {
+    text-align: center;
+    padding: 22px 5%;
+    background-color: #E8D8C3;
+    color: #4A352E;
+    font-size: 0.9rem;
+    margin-top: 50px;
+}
+
+@media (max-width: 900px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .main-nav a {
+        margin-left: 0;
+        margin-right: 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <h1 class="logo">LENKA Z</h1>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="reel.html">Reel</a>
+            <a href="resume.html">Resume</a>
+            <a href="bio.html" class="active">Bio</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <h2 class="section-title">Full Biography</h2>
+
+    <p class="bio-text">
+Lenka Zviadadze (Lenka Z) was born on September 6, 2001 in Tbilisi, Georgia. At the age of three, she made her television debut on “Imedi.” That same year, she won the children’s competition “Little Miss Caucasus” and received titles such as “Mini Miss Princess” and “Star of the Future.” By age four, Lenka was awarded a diploma “For Devotion to the Song” by the musical studio “Sisters Chokhonelidze.” She also began modeling for the studio “NOVA,” appearing in fashion shows and commercials.
+
+At five, she was named “Georgian Miss Charm” at the beauty contest “Little Miss Georgia.” At six, Lenka joined the ballet studio under Vakhtang Chabukiani, directed by Nino Ananiashvili, and competed in the children’s musical contest “Ana Bana” on Rustavi 2.
+
+By seven, she was attending the Z. Paliashvili music school for talented children and soon won the competitions “Merry Notes,” “5 VEGA,” and later the Chopin festival in 2009. At ten, she became a finalist on the megaproject “Got Talent” on Rustavi 2.
+
+In 2012, Lenka was invited by French director Redha Benteifour to perform one of the lead roles in the musical “Melodies of Vera District,” sharing the stage with Vakhtang Kikabidze, Sofia Nizharadze, and the ensemble “Sukhishvili.” She also performed at events hosted by Catholicos-Patriarch Ilia II and collaborated with artists such as Nani Bregvadze, Nino Katamadze, and Mamuka Charkviani. She later performed with the Opera and Ballet Theatre orchestra as both singer and pianist, winning a classical music competition at the Art Academy.
+
+In 2013, she won the international competition “Slavianski Bazaar” in Vitebsk, and in 2014 became a finalist at the international competition “New Wave.” That same year, she won the online contest of the TV show “Bravo.” After a brief break, she returned in 2018 to win the international festival “SULIKO.” She also participated in Jessie J’s Rose Challenge, gaining the artist’s recognition and a public shoutout.
+
+From 2018–2019, Lenka toured with Georgian artist Mamuka Charkviani. In 2021, she competed in “The Voice of Georgia,” earning a 4-chair turn. In 2022, she relocated to New York City and began her BFA training at Adelphi University. She made her American stage debut in “The Trojan Women,” portraying Helen of Troy.
+    </p>
+
+    <h2 class="section-title" style="margin-top:50px;">Short Clip</h2>
+
+    <div class="video-wrapper">
+        <video autoplay loop muted playsinline>
+            <source src="miniclip.MOV" type="video/mp4">
+            <source src="miniclip.MOV" type="video/quicktime">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+</main>
+
+<footer class="site-footer">
+    © <span id="year"></span> Lenka Zviadadze. All rights reserved.
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
