@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,14 +75,7 @@
             border-bottom: 3px solid #A67C52;
             display: inline-block;
             padding-bottom: 4px;
-            margin-bottom: 16px;
-        }
-
-        .section-intro {
-            margin-top: 5px;
-            margin-bottom: 35px;
-            font-size: 0.98rem;
-            color: #5C4637;
+            margin-bottom: 20px;
         }
 
         .clip-card {
@@ -91,27 +85,25 @@
             box-shadow: 0 4px 18px rgba(92, 70, 55, 0.15);
             padding: 26px 22px 30px;
             max-width: 800px;
-            margin: 0 auto;
+            margin: 0 auto 40px;
         }
 
         .clip-title {
             font-size: 1.2rem;
-            margin: 0 0 8px;
+            margin: 0 0 10px;
             color: #3E2C2A;
+            text-align: left;
         }
 
-        .clip-note {
-            font-size: 0.96rem;
-            color: #5C4637;
-            margin: 0 0 18px;
+        .video-wrapper {
+            margin-top: 15px;
         }
 
-        .placeholder {
-            padding: 40px 10px;
-            border-radius: 10px;
-            border: 1px dashed #C4A685;
-            font-size: 0.95rem;
-            color: #7A5A3C;
+        .video-wrapper video {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(92, 70, 55, 0.2);
+            display: block;
         }
 
         /* Footer */
@@ -155,35 +147,20 @@
 
 <main>
     <h2 class="section-title">Clips</h2>
-    <p class="section-intro">
-        Selected on-camera work, acting edits, and short film clips.
-    </p>
 
+    <!-- FIRST CLIP (your uploaded clip.MOV) -->
     <div class="clip-card">
-        <h3 class="clip-title">New clips coming soon</h3>
-        <p class="clip-note">
-            This page will feature edited scenes from short films and future projects.
-        </p>
-
-        <div class="placeholder">
-            Acting edits and short film selections will be added here as new work is released.
-            Check back soon.
-        </div>
-
-        <!--
-        When you have a clip ready (YouTube or Vimeo), we can replace the placeholder with:
-
+        <h3 class="clip-title">Scene Clip</h3>
         <div class="video-wrapper">
-            <iframe
-                src="YOUTUBE_OR_VIMEO_EMBED_URL"
-                title="Clip Title"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-            </iframe>
+            <video autoplay loop muted playsinline>
+                <source src="clip.MOV" type="video/mp4">
+                <source src="clip.MOV" type="video/quicktime">
+                Your browser does not support the video tag.
+            </video>
         </div>
-        -->
     </div>
+
+    <!-- The page can grow: we can add Clip 2, Clip 3, Vimeo links, etc. -->
 </main>
 
 <footer class="site-footer">
