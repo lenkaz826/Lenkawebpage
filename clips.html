@@ -91,16 +91,19 @@
             font-size: 1.2rem;
             margin: 0 0 10px;
             color: #3E2C2A;
+            text-align: left;
         }
 
-        .placeholder {
-            margin-top: 10px;
-            padding: 40px 20px;
+        .video-wrapper {
+            margin-top: 15px;
+        }
+
+        .video-wrapper iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
             border-radius: 12px;
-            border: 1px dashed #C4A685;
-            color: #7A5A3C;
-            background-color: #FFF9F2;
-            font-size: 0.98rem;
+            border: 1px solid #D6C5B2;
+            box-shadow: 0 4px 18px rgba(92, 70, 55, 0.15);
         }
 
         /* Footer */
@@ -145,11 +148,17 @@
 <main>
     <h2 class="section-title">Clips</h2>
 
+    <!-- CLIP 1 (Your new YouTube link) -->
     <div class="clip-card">
-        <h3 class="clip-title">New Clips Coming Soon</h3>
-        <div class="placeholder">
-            High-quality on-camera acting clips and short film scenes will be added soon.<br>
-            Check back for updates.
+        <h3 class="clip-title">Scene Clip</h3>
+        <div class="video-wrapper">
+            <iframe
+                src="https://www.youtube.com/embed/sbYCnsgh504"
+                title="Scene Clip by Lenka Z"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
         </div>
     </div>
 
