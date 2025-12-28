@@ -6,8 +6,8 @@
 
     <!-- SEO BASICS -->
     <title>Resume | Lenka Z</title>
-    <meta name="description" content="Resume of Lenka Z, award-winning singer and actor. Credits include The Voice of Georgia, Georgia’s Got Talent, film, theatre, and musical theatre performances." />
-    <meta name="keywords" content="Lenka Z resume, Lenka Zviadadze resume, actor resume, singer resume, musical theatre actress, film actress, The Voice of Georgia" />
+    <meta name="description" content="Professional acting and singing resume of Lenka Z. Credits include The Voice of Georgia, Georgia’s Got Talent, film, theatre, and musical theatre." />
+    <meta name="keywords" content="Lenka Z resume, Lenka Zviadadze resume, actor resume, singer resume, musical theatre actress, film actress" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Lenka Zviadadze" />
 
@@ -26,6 +26,7 @@
             line-height: 1.6;
         }
 
+        /* HEADER */
         .site-header {
             background-color: #E8D8C3;
             padding: 18px 5%;
@@ -64,6 +65,7 @@
             border-bottom: 2px solid #A67C52;
         }
 
+        /* MAIN */
         main {
             max-width: 900px;
             margin: 0 auto;
@@ -79,6 +81,7 @@
             margin-bottom: 25px;
         }
 
+        /* RESUME CARD */
         .resume-card {
             background-color: #FAF4EC;
             border-radius: 12px;
@@ -117,15 +120,9 @@
             gap: 32px;
         }
 
-        .left-column section {
-            margin-bottom: 20px;
-        }
-
-        .left-column h2,
-        .right-column h2 {
+        h2 {
             font-size: 1.05rem;
             margin: 0 0 8px;
-            color: #3E2C2A;
         }
 
         .credit-table {
@@ -143,32 +140,21 @@
         .credit-table td:nth-child(2) { width: 25%; }
         .credit-table td:nth-child(3) { width: 20%; text-align: right; }
 
-        .training-text,
-        .note-text {
+        .skills-box {
+            border: 1px dashed #C78AA5;
+            border-radius: 8px;
+            padding: 10px 12px;
             font-size: 0.95rem;
-        }
-
-        .training-text p {
-            margin: 2px 0;
+            line-height: 1.4;
         }
 
         .note-text {
             margin-top: 10px;
             font-style: italic;
-        }
-
-        .right-column {
             font-size: 0.95rem;
         }
 
-        .skills-box {
-            border: 1px dashed #C78AA5;
-            border-radius: 8px;
-            padding: 10px 12px;
-            margin-top: 6px;
-            line-height: 1.4;
-        }
-
+        /* FOOTER */
         .site-footer {
             text-align: center;
             padding: 22px 5%;
@@ -178,6 +164,7 @@
             margin-top: 50px;
         }
 
+        /* MOBILE */
         @media (max-width: 800px) {
             .resume-body {
                 grid-template-columns: 1fr;
@@ -185,7 +172,6 @@
 
             .resume-header {
                 flex-direction: column;
-                align-items: flex-start;
                 gap: 8px;
             }
 
@@ -197,8 +183,8 @@
         @media (max-width: 900px) {
             .header-inner {
                 flex-direction: column;
-                align-items: center;
                 gap: 10px;
+                align-items: center;
             }
 
             .main-nav {
@@ -246,24 +232,50 @@
         </div>
 
         <div class="resume-body">
-            <div class="left-column">
 
-                <!-- CONTENT UNCHANGED -->
-                <!-- (Exactly as you provided) -->
+            <!-- LEFT COLUMN -->
+            <div>
 
-                <!-- Television -->
-                <!-- Film -->
-                <!-- Theatre -->
-                <!-- Training -->
+                <h2>Television</h2>
+                <table class="credit-table">
+                    <tr><td>The Voice Georgia</td><td></td><td>Reality/Competition</td></tr>
+                    <tr><td>Georgia’s Got Talent</td><td></td><td>Reality/Competition</td></tr>
+                </table>
+
+                <h2>Film</h2>
+                <table class="credit-table">
+                    <tr><td>Shed</td><td>Lead</td><td></td></tr>
+                    <tr><td>Feeling in Red</td><td>Lead</td><td></td></tr>
+                    <tr><td>Drift</td><td>Lead</td><td></td></tr>
+                    <tr><td>Ditto</td><td>Lead</td><td></td></tr>
+                    <tr><td>Too Emotional</td><td>Lead</td><td></td></tr>
+                </table>
+
+                <h2>Theatre</h2>
+                <table class="credit-table">
+                    <tr><td>Roam 29 Hour Reading</td><td></td><td></td></tr>
+                    <tr><td>Bran Castle Workshop</td><td>Mirela</td><td></td></tr>
+                    <tr><td>Feminine Rage: Musicals Edition</td><td></td><td>54 Below</td></tr>
+                    <tr><td>The Trojan Women</td><td>Helen</td><td>Adelphi University</td></tr>
+                    <tr><td>A Cinderella Story</td><td>Cinderella</td><td>N. Dumbadze Theater</td></tr>
+                    <tr><td>Melodies of Vera District</td><td>Tamro</td><td>International Tour</td></tr>
+                    <tr><td>A Christmas Tale</td><td>Snowflake</td><td>N. Dumbadze Theater</td></tr>
+                </table>
+
+                <h2>Training</h2>
+                <p>Adelphi University, BFA in Acting</p>
+                <p>Acting / Voice / Dance Teachers & Coaches: Shoshanah Tarkow, Kerry Prep, Ray Rodriguez & Amanda Fiorentine</p>
+                <div class="note-text">*Local Hire: NY</div>
 
             </div>
 
-            <div class="right-column">
+            <!-- RIGHT COLUMN -->
+            <div>
                 <h2>Special Skills</h2>
                 <div class="skills-box">
                     Vocal Range: Mezzo-Soprano<br>
                     Vocal Style: Belt<br>
-                    American Standard/General Accent<br>
+                    American Standard / General Accent<br>
                     East-Bosnian Accent<br>
                     Eastern European Accent<br>
                     Kosovo-Resava Accent<br>
@@ -274,6 +286,7 @@
                     Fluent Georgian
                 </div>
             </div>
+
         </div>
 
     </div>
