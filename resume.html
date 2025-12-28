@@ -190,6 +190,7 @@
             margin-top: 50px;
         }
 
+        /* EXISTING MOBILE RULES (UNCHANGED) */
         @media (max-width: 800px) {
             .resume-body {
                 grid-template-columns: 1fr;
@@ -203,6 +204,26 @@
 
             .rep-block {
                 text-align: left;
+            }
+        }
+
+        /* HEADER FIX — SAME AS INDEX */
+        @media (max-width: 900px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .main-nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 14px;
+            }
+
+            .main-nav a {
+                margin: 0;
             }
         }
     </style>
@@ -370,4 +391,3 @@
 
 </body>
 </html>
-
