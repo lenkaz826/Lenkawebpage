@@ -109,16 +109,23 @@
             margin-top: 50px;
         }
 
+        /* HEADER FIX — SAME AS ALL OTHER PAGES */
         @media (max-width: 900px) {
             .header-inner {
                 flex-direction: column;
-                align-items: flex-start;
-                gap: 8px;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .main-nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 14px;
             }
 
             .main-nav a {
-                margin-left: 0;
-                margin-right: 16px;
+                margin: 0;
             }
         }
     </style>
