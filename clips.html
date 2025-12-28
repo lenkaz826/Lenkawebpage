@@ -101,9 +101,16 @@
 
         .clip-title {
             font-size: 1.2rem;
-            margin: 0 0 10px;
+            margin: 0 0 6px;
             color: #3E2C2A;
             text-align: left;
+        }
+
+        .clip-subtitle {
+            font-size: 0.9rem;
+            color: #5C4637;
+            text-align: left;
+            margin-bottom: 8px;
         }
 
         .video-wrapper {
@@ -167,6 +174,7 @@
 <main>
     <h2 class="section-title">Clips</h2>
 
+    <!-- Acting Clip -->
     <div class="clip-card">
         <h3 class="clip-title">Scene Clip</h3>
         <div class="video-wrapper">
@@ -175,6 +183,21 @@
                 title="Scene Clip by Lenka Z"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Directed Short Film -->
+    <div class="clip-card">
+        <h3 class="clip-title">Short Film — Director</h3>
+        <div class="clip-subtitle">Written &amp; Directed by Lenka Z</div>
+        <div class="video-wrapper">
+            <iframe
+                src="https://player.vimeo.com/video/1146033718"
+                title="Short Film directed by Lenka Z"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
                 allowfullscreen>
             </iframe>
         </div>
