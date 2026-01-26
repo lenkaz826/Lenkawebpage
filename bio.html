@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- BASIC META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO BASICS -->
+    <!-- SEO -->
     <title>Biography | Lenka Z</title>
-    <meta name="description" content="Biography of Lenka Z, award-winning singer and actor from Tbilisi, Georgia, now based in New York City. Featured on The Voice of Georgia and Got Talent." />
-    <meta name="keywords" content="Lenka Z biography, Lenka Zviadadze, singer actor biography, Georgian singer, New York actress, The Voice of Georgia, Got Talent" />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Lenka Zviadadze" />
+    <meta name="description" content="Biography of Lenka Z, award-winning singer and actor from Tbilisi, Georgia, now based in New York City. Featured on The Voice of Georgia and Got Talent.">
+    <meta name="keywords" content="Lenka Z biography, Lenka Zviadadze, singer actor biography, Georgian singer, New York actress, The Voice of Georgia, Got Talent">
+    <meta name="author" content="Lenka Zviadadze">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lenkaz826.github.io/Lenkawebpage/bio.html">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Biography | Lenka Z" />
-    <meta property="og:description" content="Read the biography of Lenka Z, award-winning singer and actor based in New York City." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lenkaz826.github.io/Lenkawebpage/bio.html" />
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Biography | Lenka Z">
+    <meta property="og:description" content="Read the biography of Lenka Z, award-winning singer and actor based in New York City.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lenkaz826.github.io/Lenkawebpage/bio.html">
 
+    <!-- STYLES -->
     <style>
         * { box-sizing: border-box; }
 
@@ -37,8 +40,8 @@
             text-decoration: underline;
         }
 
-        /* Header / Nav */
-        .site-header {
+        /* HEADER */
+        header.site-header {
             background-color: #E8D8C3;
             padding: 18px 5%;
             border-bottom: 1px solid #D6C5B2;
@@ -62,7 +65,7 @@
             margin: 0;
         }
 
-        .main-nav a {
+        nav.main-nav a {
             margin-left: 22px;
             font-size: 0.95rem;
             text-transform: uppercase;
@@ -70,11 +73,11 @@
             padding-bottom: 3px;
         }
 
-        .main-nav a.active {
+        nav.main-nav a.active {
             border-bottom: 2px solid #A67C52;
         }
 
-        /* Main */
+        /* MAIN */
         main {
             max-width: 900px;
             margin: 0 auto;
@@ -112,7 +115,8 @@
             display: block;
         }
 
-        .site-footer {
+        /* FOOTER */
+        footer.site-footer {
             text-align: center;
             padding: 22px 5%;
             background-color: #E8D8C3;
@@ -121,7 +125,7 @@
             margin-top: 50px;
         }
 
-        /* HEADER FIX — SAME AS ALL OTHER PAGES */
+        /* RESPONSIVE HEADER */
         @media (max-width: 900px) {
             .header-inner {
                 flex-direction: column;
@@ -129,14 +133,14 @@
                 gap: 10px;
             }
 
-            .main-nav {
+            nav.main-nav {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 14px;
             }
 
-            .main-nav a {
+            nav.main-nav a {
                 margin: 0;
             }
         }
@@ -148,7 +152,7 @@
 <header class="site-header">
     <div class="header-inner">
         <h1 class="logo">LENKA Z</h1>
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="resume.html">Resume</a>
             <a href="clips.html">Clips</a>
@@ -158,25 +162,28 @@
 </header>
 
 <main>
-    <h2 class="section-title">Biography</h2>
 
-    <div class="bio-text">
-        <p>Lenka Zviadadze (professionally known as Lenka Z) was born on September 6, 2001, in Tbilisi, Georgia. She made her first television appearance at the age of three on the “Imedi” channel. That same year, she won the children’s competition Little Miss Caucasus, earning titles such as Mini Miss Princess and Star of the Future. At four, Lenka received a diploma titled “For Devotion to the Song” from the musical studio Sisters Chokhonelidze, while also beginning her modeling career with NOVA, appearing in fashion shows and commercials.</p>
+    <section aria-labelledby="bio-title">
+        <h2 id="bio-title" class="section-title">Biography</h2>
 
-        <p>At five, she was crowned Georgian Miss Charm at the “Little Miss Georgia” beauty contest. By age six, she joined the ballet studio under the Vakhtang Chabukiani State School of Ballet, directed by internationally acclaimed ballerina Nino Ananiashvili. That same year, she competed in the children’s musical contest Ana Bana on the Rustavi 2 television channel.</p>
+        <article class="bio-text">
+            <p>Lenka Zviadadze (professionally known as Lenka Z) was born on September 6, 2001, in Tbilisi, Georgia. She made her first television appearance at the age of three on the “Imedi” channel. That same year, she won the children’s competition Little Miss Caucasus, earning titles such as Mini Miss Princess and Star of the Future. At four, Lenka received a diploma titled “For Devotion to the Song” from the musical studio Sisters Chokhonelidze, while also beginning her modeling career with NOVA, appearing in fashion shows and commercials.</p>
 
-        <p>At seven, Lenka began attending the Z. Paliashvili Music School for Gifted Children, where she continued her training as both a vocalist and pianist. She went on to win several youth festivals, including Merry Notes, 5 VEGA, and in 2009, the Chopin Festival. By the age of ten, she became a finalist on the megaproject Got Talent (Georgia’s Got Talent) on Rustavi 2.</p>
+            <p>At five, she was crowned Georgian Miss Charm at the “Little Miss Georgia” beauty contest. By age six, she joined the ballet studio under the Vakhtang Chabukiani State School of Ballet, directed by internationally acclaimed ballerina Nino Ananiashvili. That same year, she competed in the children’s musical contest Ana Bana on the Rustavi 2 television channel.</p>
 
-        <p>In 2012, Lenka was invited by French director Redha Benteifour to perform one of the lead roles in the musical Melodies of Vera District. She shared the stage with iconic figures including Vakhtang Kikabidze, Sofia Nizharadze, and the choreographic ensemble Sukhishvili.</p>
+            <p>At seven, Lenka began attending the Z. Paliashvili Music School for Gifted Children, where she continued her training as both a vocalist and pianist. She went on to win several youth festivals, including Merry Notes, 5 VEGA, and in 2009, the Chopin Festival. By the age of ten, she became a finalist on the megaproject Got Talent (Georgia’s Got Talent) on Rustavi 2.</p>
 
-        <p>In 2013, she won the international music competition Slavianski Bazaar in Vitebsk, and in 2014 she became a finalist of the internationally broadcast competition New Wave.</p>
+            <p>In 2012, Lenka was invited by French director Redha Benteifour to perform one of the lead roles in the musical Melodies of Vera District. She shared the stage with iconic figures including Vakhtang Kikabidze, Sofia Nizharadze, and the choreographic ensemble Sukhishvili.</p>
 
-        <p>From 2018 to 2019, Lenka toured nationally and internationally with Georgian artist Mamuka Charkviani. In 2021, she competed on The Voice of Georgia and earned a four-chair turn.</p>
+            <p>In 2013, she won the international music competition Slavianski Bazaar in Vitebsk, and in 2014 she became a finalist of the internationally broadcast competition New Wave.</p>
 
-        <p>In 2022, Lenka moved to New York City to pursue a BFA in Theatre at Adelphi University, making her American stage debut as Helen of Troy.</p>
+            <p>From 2018 to 2019, Lenka toured nationally and internationally with Georgian artist Mamuka Charkviani. In 2021, she competed on The Voice of Georgia and earned a four-chair turn.</p>
 
-        <p>Lenka continues to develop as a singer, actor, and creator, blending her classical foundation with contemporary performance and cinematic storytelling.</p>
-    </div>
+            <p>In 2022, Lenka moved to New York City to pursue a BFA in Theatre at Adelphi University, making her American stage debut as Helen of Troy.</p>
+
+            <p>Lenka continues to develop as a singer, actor, and creator, blending her classical foundation with contemporary performance and cinematic storytelling.</p>
+        </article>
+    </section>
 
     <div class="video-wrapper">
         <video autoplay loop muted playsinline>
@@ -185,6 +192,7 @@
             Your browser does not support the video tag.
         </video>
     </div>
+
 </main>
 
 <footer class="site-footer">
