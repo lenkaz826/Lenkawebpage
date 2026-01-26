@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- BASIC META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO BASICS -->
+    <!-- SEO -->
     <title>Resume | Lenka Z</title>
-    <meta name="description" content="Professional acting and singing resume of Lenka Z. Credits include The Voice of Georgia, Georgia’s Got Talent, film, theatre, and musical theatre." />
-    <meta name="keywords" content="Lenka Z resume, Lenka Zviadadze resume, actor resume, singer resume, musical theatre actress, film actress" />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Lenka Zviadadze" />
+    <meta name="description" content="Professional acting and singing resume of Lenka Z. Credits include The Voice of Georgia, Georgia’s Got Talent, film, theatre, and musical theatre.">
+    <meta name="keywords" content="Lenka Z resume, Lenka Zviadadze resume, actor resume, singer resume, musical theatre actress, film actress">
+    <meta name="author" content="Lenka Zviadadze">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lenkaz826.github.io/Lenkawebpage/resume.html">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Resume | Lenka Z" />
-    <meta property="og:description" content="Professional acting and singing resume of Lenka Z." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lenkaz826.github.io/Lenkawebpage/resume.html" />
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Resume | Lenka Z">
+    <meta property="og:description" content="Professional acting and singing resume of Lenka Z.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lenkaz826.github.io/Lenkawebpage/resume.html">
 
+    <!-- STYLES -->
     <style>
         body {
             margin: 0;
@@ -27,7 +30,7 @@
         }
 
         /* HEADER */
-        .site-header {
+        header.site-header {
             background-color: #E8D8C3;
             padding: 18px 5%;
             border-bottom: 1px solid #D6C5B2;
@@ -51,7 +54,7 @@
             color: #4A352E;
         }
 
-        .main-nav a {
+        nav.main-nav a {
             margin-left: 22px;
             text-transform: uppercase;
             font-size: 0.95rem;
@@ -61,7 +64,7 @@
             color: #5C4637;
         }
 
-        .main-nav a.active {
+        nav.main-nav a.active {
             border-bottom: 2px solid #A67C52;
         }
 
@@ -97,7 +100,7 @@
             margin-bottom: 24px;
         }
 
-        .name-block h1 {
+        .name-block h2 {
             margin: 0;
             font-size: 2rem;
             color: #B13270;
@@ -120,7 +123,7 @@
             gap: 32px;
         }
 
-        h2 {
+        .resume-body h3 {
             font-size: 1.05rem;
             margin: 0 0 8px;
         }
@@ -129,6 +132,7 @@
             width: 100%;
             border-collapse: collapse;
             font-size: 0.95rem;
+            margin-bottom: 14px;
         }
 
         .credit-table td {
@@ -154,7 +158,7 @@
             font-size: 0.95rem;
         }
 
-        /* DOWNLOAD BUTTON */
+        /* DOWNLOAD */
         .download-wrapper {
             text-align: center;
             margin-top: 28px;
@@ -177,7 +181,7 @@
         }
 
         /* FOOTER */
-        .site-footer {
+        footer.site-footer {
             text-align: center;
             padding: 22px 5%;
             background-color: #E8D8C3;
@@ -186,7 +190,7 @@
             margin-top: 50px;
         }
 
-        /* MOBILE */
+        /* RESPONSIVE */
         @media (max-width: 800px) {
             .resume-body {
                 grid-template-columns: 1fr;
@@ -209,14 +213,14 @@
                 align-items: center;
             }
 
-            .main-nav {
+            nav.main-nav {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 14px;
             }
 
-            .main-nav a {
+            nav.main-nav a {
                 margin: 0;
             }
         }
@@ -228,7 +232,7 @@
 <header class="site-header">
     <div class="header-inner">
         <h1 class="logo">LENKA Z</h1>
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="resume.html" class="active">Resume</a>
             <a href="clips.html">Clips</a>
@@ -238,84 +242,87 @@
 </header>
 
 <main>
-    <h2 class="section-title">Resume</h2>
 
-    <div class="resume-card">
+    <section aria-labelledby="resume-title">
+        <h2 id="resume-title" class="section-title">Resume</h2>
 
-        <div class="resume-header">
-            <div class="name-block">
-                <h1>Lenka Z</h1>
-            </div>
-            <div class="rep-block">
-                <strong>UIA Talent Agency</strong>
-                theatrical@uiatalent.com<br>
-                (212) 965-1797
-            </div>
-        </div>
+        <article class="resume-card">
 
-        <div class="resume-body">
-
-            <!-- LEFT COLUMN -->
-            <div>
-                <h2>Television</h2>
-                <table class="credit-table">
-                    <tr><td>The Voice Georgia</td><td></td><td>Reality/Competition</td></tr>
-                    <tr><td>Georgia’s Got Talent</td><td></td><td>Reality/Competition</td></tr>
-                </table>
-
-                <h2>Film</h2>
-                <table class="credit-table">
-                    <tr><td>Shed</td><td>Lead</td><td></td></tr>
-                    <tr><td>Feeling in Red</td><td>Lead</td><td></td></tr>
-                    <tr><td>Drift</td><td>Lead</td><td></td></tr>
-                    <tr><td>Ditto</td><td>Lead</td><td></td></tr>
-                    <tr><td>Too Emotional</td><td>Lead</td><td></td></tr>
-                </table>
-
-                <h2>Theatre</h2>
-                <table class="credit-table">
-                    <tr><td>Roam 29 Hour Reading</td><td></td><td></td></tr>
-                    <tr><td>Bran Castle Workshop</td><td>Mirela</td><td></td></tr>
-                    <tr><td>Feminine Rage: Musicals Edition</td><td></td><td>54 Below</td></tr>
-                    <tr><td>The Trojan Women</td><td>Helen</td><td>Adelphi University</td></tr>
-                    <tr><td>A Cinderella Story</td><td>Cinderella</td><td>N. Dumbadze Theater</td></tr>
-                    <tr><td>Melodies of Vera District</td><td>Tamro</td><td>International Tour</td></tr>
-                    <tr><td>A Christmas Tale</td><td>Snowflake</td><td>N. Dumbadze Theater</td></tr>
-                </table>
-
-                <h2>Training</h2>
-                <p>Adelphi University, BFA in Acting</p>
-                <p>Acting / Voice / Dance Teachers & Coaches: Shoshanah Tarkow, Kerry Prep, Ray Rodriguez & Amanda Fiorentine</p>
-                <div class="note-text">*Local Hire: NY</div>
-            </div>
-
-            <!-- RIGHT COLUMN -->
-            <div>
-                <h2>Special Skills</h2>
-                <div class="skills-box">
-                    Vocal Range: Mezzo-Soprano<br>
-                    Vocal Style: Belt<br>
-                    American Standard / General Accent<br>
-                    East-Bosnian Accent<br>
-                    Eastern European Accent<br>
-                    Kosovo-Resava Accent<br>
-                    Russian Accent<br>
-                    Slavic – South Eastern Bloc Accent<br>
-                    Slovenian Accent<br>
-                    Fluent English (second language)<br>
-                    Fluent Georgian
+            <header class="resume-header">
+                <div class="name-block">
+                    <h2>Lenka Z</h2>
                 </div>
+                <address class="rep-block">
+                    <strong>UIA Talent Agency</strong>
+                    theatrical@uiatalent.com<br>
+                    (212) 965-1797
+                </address>
+            </header>
+
+            <div class="resume-body">
+
+                <!-- LEFT COLUMN -->
+                <section>
+                    <h3>Television</h3>
+                    <table class="credit-table">
+                        <tr><td>The Voice Georgia</td><td></td><td>Reality/Competition</td></tr>
+                        <tr><td>Georgia’s Got Talent</td><td></td><td>Reality/Competition</td></tr>
+                    </table>
+
+                    <h3>Film</h3>
+                    <table class="credit-table">
+                        <tr><td>Shed</td><td>Lead</td><td></td></tr>
+                        <tr><td>Feeling in Red</td><td>Lead</td><td></td></tr>
+                        <tr><td>Drift</td><td>Lead</td><td></td></tr>
+                        <tr><td>Ditto</td><td>Lead</td><td></td></tr>
+                        <tr><td>Too Emotional</td><td>Lead</td><td></td></tr>
+                    </table>
+
+                    <h3>Theatre</h3>
+                    <table class="credit-table">
+                        <tr><td>Roam 29 Hour Reading</td><td></td><td></td></tr>
+                        <tr><td>Bran Castle Workshop</td><td>Mirela</td><td></td></tr>
+                        <tr><td>Feminine Rage: Musicals Edition</td><td></td><td>54 Below</td></tr>
+                        <tr><td>The Trojan Women</td><td>Helen</td><td>Adelphi University</td></tr>
+                        <tr><td>A Cinderella Story</td><td>Cinderella</td><td>N. Dumbadze Theater</td></tr>
+                        <tr><td>Melodies of Vera District</td><td>Tamro</td><td>International Tour</td></tr>
+                        <tr><td>A Christmas Tale</td><td>Snowflake</td><td>N. Dumbadze Theater</td></tr>
+                    </table>
+
+                    <h3>Training</h3>
+                    <p>Adelphi University, BFA in Acting</p>
+                    <p>Acting / Voice / Dance Teachers & Coaches: Shoshanah Tarkow, Kerry Prep, Ray Rodriguez & Amanda Fiorentine</p>
+                    <p class="note-text">*Local Hire: NY</p>
+                </section>
+
+                <!-- RIGHT COLUMN -->
+                <aside>
+                    <h3>Special Skills</h3>
+                    <div class="skills-box">
+                        Vocal Range: Mezzo-Soprano<br>
+                        Vocal Style: Belt<br>
+                        American Standard / General Accent<br>
+                        East-Bosnian Accent<br>
+                        Eastern European Accent<br>
+                        Kosovo-Resava Accent<br>
+                        Russian Accent<br>
+                        Slavic – South Eastern Bloc Accent<br>
+                        Slovenian Accent<br>
+                        Fluent English (second language)<br>
+                        Fluent Georgian
+                    </div>
+                </aside>
+
             </div>
+        </article>
+    </section>
 
-        </div>
-    </div>
-
-    <!-- PDF DOWNLOAD -->
     <div class="download-wrapper">
         <a href="resume.pdf" class="download-btn" target="_blank">
             Download Resume (PDF)
         </a>
     </div>
+
 </main>
 
 <footer class="site-footer">
@@ -323,7 +330,7 @@
 </footer>
 
 <script>
-document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
 </body>
