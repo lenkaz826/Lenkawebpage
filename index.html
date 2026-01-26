@@ -1,189 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- BASIC META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO BASICS -->
+    <!-- SEO -->
     <title>Lenka Z | Singer & Actor</title>
-    <meta name="description" content="Lenka Z is an award-winning singer and actor from Tbilisi, Georgia, now based in New York City. Featured on The Voice of Georgia and Got Talent." />
-    <meta name="keywords" content="Lenka Z, Lenka Zviadadze, singer, actor, New York actress, Georgian singer, The Voice of Georgia, Got Talent" />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Lenka Zviadadze" />
+    <meta name="description" content="Lenka Z is an award-winning singer and actor from Tbilisi, Georgia, now based in New York City. Featured on The Voice of Georgia and Got Talent.">
+    <meta name="keywords" content="Lenka Z, Lenka Zviadadze, singer, actor, New York actress, Georgian singer, The Voice of Georgia, Got Talent">
+    <meta name="author" content="Lenka Zviadadze">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lenkaz826.github.io/Lenkawebpage/">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Lenka Z | Singer & Actor" />
-    <meta property="og:description" content="Official website of Lenka Z, award-winning singer and actor based in New York City." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lenkaz826.github.io/Lenkawebpage/index.html" />
-    <meta property="og:image" content="https://lenkaz826.github.io/Lenkawebpage/headshot2.JPG" />
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Lenka Z | Singer & Actor">
+    <meta property="og:description" content="Official website of Lenka Z, award-winning singer and actor based in New York City.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lenkaz826.github.io/Lenkawebpage/">
+    <meta property="og:image" content="https://lenkaz826.github.io/Lenkawebpage/headshot2.JPG">
 
-<style>
-/* ---------------- GLOBAL ---------------- */
-* { box-sizing: border-box; }
-
-body {
-    margin: 0;
-    font-family: "Georgia", serif;
-    background-color: #F5EDE3;
-    color: #3E2C2A;
-    line-height: 1.7;
-}
-
-a { color: #5C4637; text-decoration: none; }
-a:hover { text-decoration: underline; }
-
-/* ---------------- HEADER ---------------- */
-.site-header {
-    background-color: #E8D8C3;
-    padding: 18px 5%;
-    border-bottom: 1px solid #D6C5B2;
-    position: sticky;
-    top: 0;
-    z-index: 20;
-}
-
-.header-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    font-size: 1.8rem;
-    letter-spacing: 0.15em;
-    color: #4A352E;
-    margin: 0;
-}
-
-.main-nav a {
-    margin-left: 22px;
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding-bottom: 3px;
-}
-
-.main-nav a.active {
-    border-bottom: 2px solid #A67C52;
-}
-
-/* ---------------- MAIN LAYOUT ---------------- */
-main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 40px 5% 60px;
-}
-
-/* ---------------- HERO ---------------- */
-.hero {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.hero-images {
-    flex: 1;
-    max-width: 380px;
-}
-
-.headshot {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 16px rgba(92, 70, 55, 0.2);
-}
-
-.hero-text {
-    flex: 1.2;
-    background-color: #FAF4EC;
-    padding: 25px;
-    border-radius: 10px;
-    border: 1px solid #E0D5C6;
-    box-shadow: 0 4px 18px rgba(92, 70, 55, 0.15);
-}
-
-.hero-name {
-    color: #4A352E;
-    font-size: 1.8rem;
-}
-
-.tagline {
-    color: #5C4637;
-    margin-top: 15px;
-    font-size: 1rem;
-}
-
-/* ---------------- VIDEO SECTION ---------------- */
-.section-title {
-    font-size: 1.7rem;
-    color: #4A352E;
-    border-bottom: 3px solid #A67C52;
-    display: inline-block;
-    padding-bottom: 4px;
-}
-
-.video-wrapper {
-    margin-top: 20px;
-    max-width: 800px;
-}
-
-.video-wrapper iframe {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border-radius: 10px;
-    border: 1px solid #D6C5B2;
-}
-
-/* ---------------- FOOTER ---------------- */
-.site-footer {
-    text-align: center;
-    padding: 22px 5%;
-    background-color: #E8D8C3;
-    color: #4A352E;
-    font-size: 0.9rem;
-    margin-top: 40px;
-}
-
-/* ---------------- RESPONSIVE (HEADER) ---------------- */
-@media (max-width: 900px) {
-    .header-inner {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+    <!-- STRUCTURED DATA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Lenka Z",
+      "alternateName": "Lenka Zviadadze",
+      "url": "https://lenkaz826.github.io/Lenkawebpage/",
+      "image": "https://lenkaz826.github.io/Lenkawebpage/headshot2.JPG",
+      "jobTitle": ["Singer", "Actor"],
+      "address": {
+        "@type": "Place",
+        "addressLocality": "New York City",
+        "addressCountry": "US"
+      }
     }
+    </script>
 
-    .main-nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 14px;
-    }
+    <!-- STYLES -->
+    <style>
+        * { box-sizing: border-box; }
 
-    .main-nav a {
-        margin: 0;
-    }
-}
+        body {
+            margin: 0;
+            font-family: "Georgia", serif;
+            background-color: #F5EDE3;
+            color: #3E2C2A;
+            line-height: 1.7;
+        }
 
-/* ---------------- RESPONSIVE (IPHONE HERO FIX) ---------------- */
-@media (max-width: 600px) {
-    .hero {
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-    }
+        a { color: #5C4637; text-decoration: none; }
+        a:hover { text-decoration: underline; }
 
-    .hero-images {
-        max-width: 70%;
-    }
+        header.site-header {
+            background-color: #E8D8C3;
+            padding: 18px 5%;
+            border-bottom: 1px solid #D6C5B2;
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
 
-    .hero-text {
-        text-align: left;
-    }
-}
-</style>
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            letter-spacing: 0.15em;
+            color: #4A352E;
+            margin: 0;
+        }
+
+        nav.main-nav a {
+            margin-left: 22px;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding-bottom: 3px;
+        }
+
+        nav.main-nav a.active {
+            border-bottom: 2px solid #A67C52;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 5% 60px;
+        }
+
+        section.hero {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .hero-images {
+            flex: 1;
+            max-width: 380px;
+        }
+
+        .headshot {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(92, 70, 55, 0.2);
+        }
+
+        .hero-text {
+            flex: 1.2;
+            background-color: #FAF4EC;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #E0D5C6;
+            box-shadow: 0 4px 18px rgba(92, 70, 55, 0.15);
+        }
+
+        .hero-name {
+            color: #4A352E;
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+
+        .tagline {
+            color: #5C4637;
+            margin-top: 15px;
+            font-size: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.7rem;
+            color: #4A352E;
+            border-bottom: 3px solid #A67C52;
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        .video-wrapper {
+            margin-top: 20px;
+            max-width: 800px;
+        }
+
+        .video-wrapper iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 10px;
+            border: 1px solid #D6C5B2;
+            margin-bottom: 20px;
+        }
+
+        footer.site-footer {
+            text-align: center;
+            padding: 22px 5%;
+            background-color: #E8D8C3;
+            color: #4A352E;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 900px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav.main-nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 14px;
+            }
+
+            nav.main-nav a {
+                margin: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            section.hero {
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .hero-images {
+                max-width: 70%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -191,7 +200,7 @@ main {
 <header class="site-header">
     <div class="header-inner">
         <h1 class="logo">LENKA Z</h1>
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Main navigation">
             <a href="index.html" class="active">Home</a>
             <a href="resume.html">Resume</a>
             <a href="clips.html">Clips</a>
@@ -207,7 +216,7 @@ main {
             <img src="headshot2.JPG" class="headshot" alt="Headshot of Lenka Z">
         </div>
 
-        <div class="hero-text">
+        <article class="hero-text">
             <h2 class="hero-name">Lenka Zviadadze (Lenka Z)</h2>
             <p class="tagline">
                 Lenka Zviadadze (Lenka Z) is an award-winning singer and actor from Tbilisi, Georgia.
@@ -216,24 +225,24 @@ main {
                 The Voice of Georgia, where she earned a four-chair turn. Now based in New York City,
                 she continues to build her artistic career across music, theatre, and performance.
             </p>
-        </div>
+        </article>
     </section>
 
-    <section>
-        <h2 class="section-title">Video Reel</h2>
+    <section aria-labelledby="video-reel">
+        <h2 id="video-reel" class="section-title">Video Reel</h2>
 
         <div class="video-wrapper">
             <iframe
                 src="https://www.youtube.com/embed/FOUd_rJsUaw"
                 title="Lenka Z Acting Reel"
-                frameborder="0"
+                loading="lazy"
                 allowfullscreen>
             </iframe>
 
             <iframe
                 src="https://www.youtube.com/embed/KNossH74eLw"
-                title="Lenka Z Reel"
-                frameborder="0"
+                title="Lenka Z Performance Reel"
+                loading="lazy"
                 allowfullscreen>
             </iframe>
         </div>
@@ -246,7 +255,7 @@ main {
 </footer>
 
 <script>
-document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
 </body>
