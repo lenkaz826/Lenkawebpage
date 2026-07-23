@@ -40,18 +40,26 @@
 
     <!-- STYLES -->
     <style>
-        * { box-sizing: border-box; }
+        * {
+            box-sizing: border-box;
+        }
 
         body {
             margin: 0;
-            font-family: "Georgia", serif;
+            font-family: Georgia, serif;
             background-color: #F5EDE3;
             color: #3E2C2A;
             line-height: 1.7;
         }
 
-        a { color: #5C4637; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        a {
+            color: #5C4637;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
 
         header.site-header {
             background-color: #E8D8C3;
@@ -72,16 +80,16 @@
 
         .logo {
             font-size: 1.8rem;
-            letter-spacing: 0.15em;
+            letter-spacing: .15em;
             color: #4A352E;
             margin: 0;
         }
 
         nav.main-nav a {
             margin-left: 22px;
-            font-size: 0.95rem;
+            font-size: .95rem;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: .1em;
             padding-bottom: 3px;
         }
 
@@ -110,16 +118,16 @@
         .headshot {
             width: 100%;
             border-radius: 10px;
-            box-shadow: 0 4px 16px rgba(92, 70, 55, 0.2);
+            box-shadow: 0 4px 16px rgba(92,70,55,.2);
         }
 
         .hero-text {
             flex: 1.2;
-            background-color: #FAF4EC;
+            background: #FAF4EC;
             padding: 25px;
             border-radius: 10px;
             border: 1px solid #E0D5C6;
-            box-shadow: 0 4px 18px rgba(92, 70, 55, 0.15);
+            box-shadow: 0 4px 18px rgba(92,70,55,.15);
         }
 
         .hero-name {
@@ -152,19 +160,19 @@
             aspect-ratio: 16 / 9;
             border-radius: 10px;
             border: 1px solid #D6C5B2;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         footer.site-footer {
             text-align: center;
             padding: 22px 5%;
-            background-color: #E8D8C3;
+            background: #E8D8C3;
             color: #4A352E;
-            font-size: 0.9rem;
+            font-size: .9rem;
             margin-top: 40px;
         }
 
-        @media (max-width: 900px) {
+        @media (max-width:900px) {
             .header-inner {
                 flex-direction: column;
                 gap: 10px;
@@ -182,7 +190,7 @@
             }
         }
 
-        @media (max-width: 600px) {
+        @media (max-width:600px) {
             section.hero {
                 flex-direction: column;
                 gap: 24px;
@@ -200,6 +208,7 @@
 <header class="site-header">
     <div class="header-inner">
         <h1 class="logo">LENKA Z</h1>
+
         <nav class="main-nav" aria-label="Main navigation">
             <a href="index.html" class="active">Home</a>
             <a href="resume.html">Resume</a>
@@ -211,42 +220,51 @@
 
 <main>
 
-    <section class="hero">
-        <div class="hero-images">
-            <img src="headshot2.JPG" class="headshot" alt="Headshot of Lenka Z">
-        </div>
+<section class="hero">
+    <div class="hero-images">
+        <img src="headshot2.JPG" class="headshot" alt="Headshot of Lenka Z">
+    </div>
 
-        <article class="hero-text">
-            <h2 class="hero-name">Lenka Zviadadze (Lenka Z)</h2>
-            <p class="tagline">
-                Lenka Zviadadze (Lenka Z) is an award-winning singer and actor from Tbilisi, Georgia.
-                She has won multiple international music competitions and has gained national
-                recognition through Georgia’s leading reality TV franchises, including Got Talent and
-                The Voice of Georgia, where she earned a four-chair turn. Now based in New York City,
-                she continues to build her artistic career across music, theatre, and performance.
-            </p>
-        </article>
-    </section>
+    <article class="hero-text">
+        <h2 class="hero-name">Lenka Zviadadze (Lenka Z)</h2>
 
-    <section aria-labelledby="video-reel">
-        <h2 id="video-reel" class="section-title">Video Reel</h2>
+        <p class="tagline">
+            Lenka Zviadadze (Lenka Z) is an award-winning singer and actor from Tbilisi, Georgia.
+            She has won multiple international music competitions and has gained national recognition
+            through Georgia's leading reality TV franchises, including Got Talent and The Voice of Georgia,
+            where she earned a four-chair turn. Now based in New York City, she continues to build her
+            artistic career across music, theatre, and performance.
+        </p>
+    </article>
+</section>
 
-        <div class="video-wrapper">
-            <iframe
-                src="https://www.youtube.com/embed/kw0WPeRzDzA"
-                title="Lenka Z Acting Reel"
-                loading="lazy"
-                allowfullscreen>
-            </iframe>
+<section aria-labelledby="video-reel">
 
-            <iframe
-                src="https://www.youtube.com/embed/KNossH74eLw"
-                title="Lenka Z Performance Reel"
-                loading="lazy"
-                allowfullscreen>
-            </iframe>
-        </div>
-    </section>
+    <h2 id="video-reel" class="section-title">Video Reel</h2>
+
+    <div class="video-wrapper">
+
+        <!-- Acting Reel -->
+        <iframe
+            src="https://www.youtube.com/embed/TG7Qj1MdfNk"
+            title="Lenka Z Acting Reel"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+
+        <!-- Singing Reel -->
+        <iframe
+            src="https://www.youtube.com/embed/NNUZxF-OuVM"
+            title="Lenka Z Singing Reel"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
 
 </main>
 
@@ -255,7 +273,7 @@
 </footer>
 
 <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
